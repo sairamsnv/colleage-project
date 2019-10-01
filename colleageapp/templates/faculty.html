@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>REGISTAION PAGE</h2>
+    <form action="/jack/" method="POST">
+        {%csrf_token%}
+    name:
+    <input type="text" name="nm"><br>
+    subject:
+    <input type="text" name="su"><br>
+    department:
+    <input type="text" name="de"><br>
+    qulification:
+    <input type="text" name="qu"><br>
+    expeience:
+    <input type="text" name="ex"><br>
+    email:
+    <input type="email" name="em"><br>
+    <br>
+    <input type="submit" value="register">
+
+    </form>
+</body>
+</html>

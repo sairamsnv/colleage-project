@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+    NOTIFACTION:
+    <marquee width="60%" direction="down" height="100px">
+        TODAY colleage annivesaday
+            </marquee>
+            <br><br>
+    <form action='/def/' method="POST">
+
+        {%csrf_token%}
+               
+        
+                
+    DEPARTMENTS:
+
+     <select name='dep'>
+      <option value="ece">ece</option>
+      <option value="eee">eee</option>
+      <option value="mech">mech</option>
+      <option value="cse">cse</option>
+    </select><br>
+    <input type="submit" value="submit">
+
+    </form>
+    
+    events:
+    <form action='/def1/' method="POST">
+        {%csrf_token%}
+    <select name='eve'>
+            <option value="culture">culture</option>
+            <option value="sports">sports</option>
+            <option value="dance">dance</option>
+            <option value="music">music</option>
+          </select><br>
+          <input type="submit" value="submit">
+    </form>
+    faculaty information:
+    <form action='/def2/' method="POST">
+            {%csrf_token%}
+    <select name='fi'>
+            <option value="ece">ece</option>
+            <option value="eee">eee</option>
+            <option value="mech">mech</option>
+            <option value="cse">cse</option>
+          </select>
+          <input type="submit" value="submit">
+        </form>
+    student information:
+    <form action='/def3/' method="POST"></form>
+     {%csrf_token%}
+    <select name='si'>
+            <option value="ece">ece</option>
+            <option value="eee">eee</option>
+            <option value="mech">mech</option>
+            <option value="cse">cse</option>
+          </select>
+          <select name='yr'>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+              </select>
+              <input type="submit" value="submit">
+            </form>
+    exams:
+    <form action='/def4/' method="POST"></form>
+        {%csrf_token%}
+    <select name='ex'>
+            <option value="2019-09-23">2019-09-23</option>
+            <option value="2019-09-24">2019-09-24</option>
+            <option value="2019-09-22">2019-09-25</option>
+          </select>
+        <input type="submit" value="submit">
+    
+
+
+       
+        </form>
+</body>
+</html>
